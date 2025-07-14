@@ -1,0 +1,50 @@
+/* ===== Custom Animations ===== */
+/* Typing Cursor Effect */
+#typed-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Pulse Animation for Map Dots */
+.pulse-dot {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  70% { transform: scale(2.5); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* FAQ Accordion Animation */
+.faq-answer {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding-bottom: 1.5rem;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+/* Testimonial Slider */
+.testimonial-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Scroll Animations (GSAP handles most) */
+.feature-card, .pricing-card {
+  opacity: 0;
+  transform: translateY(20px);
+}

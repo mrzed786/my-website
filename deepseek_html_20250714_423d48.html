@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated RDP/VPS Hosting</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans overflow-x-hidden">
+  
+  <!-- ===== Hero Section ===== -->
+  <section class="hero min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-indigo-900 to-gray-900 relative overflow-hidden">
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <h1 id="typed-text" class="text-4xl md:text-7xl font-bold mb-4"></h1>
+      <p class="text-xl md:text-2xl text-purple-200 mb-8">High-performance RDP servers with 99.9% uptime</p>
+      <button class="cta-button px-8 py-4 bg-purple-600 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all hover:scale-105 animate-pulse">
+        Get Started Now
+      </button>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
+  </section>
+
+  <!-- ===== Features Section ===== -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="feature-card p-8 bg-gray-800 rounded-xl hover:bg-purple-900 transition-all hover:scale-105">
+          <div class="icon w-16 h-16 mb-4 bg-purple-600 rounded-full mx-auto flex items-center justify-center text-2xl">
+            ⚡
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Ultra-Fast SSD</h3>
+          <p class="text-gray-300">NVMe storage for blazing speeds.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card p-8 bg-gray-800 rounded-xl hover:bg-purple-900 transition-all hover:scale-105">
+          <div class="icon w-16 h-16 mb-4 bg-purple-600 rounded-full mx-auto flex items-center justify-center text-2xl">
+            🌍
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Global Data Centers</h3>
+          <p class="text-gray-300">Low-latency servers worldwide.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card p-8 bg-gray-800 rounded-xl hover:bg-purple-900 transition-all hover:scale-105">
+          <div class="icon w-16 h-16 mb-4 bg-purple-600 rounded-full mx-auto flex items-center justify-center text-2xl">
+            🔒
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">DDoS Protection</h3>
+          <p class="text-gray-300">Enterprise-grade security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pricing Section ===== -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Plans & Pricing</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Basic Plan -->
+        <div class="pricing-card p-8 bg-gray-900 rounded-xl border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all">
+          <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+          <p class="text-4xl font-bold mb-6">$9.99<span class="text-lg">/mo</span></p>
+          <ul class="space-y-3 mb-8">
+            <li>1GB RAM</li>
+            <li>1 CPU Core</li>
+            <li>50GB SSD</li>
+          </ul>
+          <button class="w-full py-3 bg-purple-600 rounded-lg font-medium hover:bg-purple-700">Order Now</button>
+        </div>
+        <!-- Pro Plan (Popular) -->
+        <div class="pricing-card p-8 bg-gray-900 rounded-xl border-2 border-purple-500 transform hover:scale-105 transition-all relative">
+          <div class="absolute top-0 right-0 bg-purple-600 text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
+          <h3 class="text-2xl font-semibold mb-4">Pro</h3>
+          <p class="text-4xl font-bold mb-6">$29.99<span class="text-lg">/mo</span></p>
+          <ul class="space-y-3 mb-8">
+            <li>4GB RAM</li>
+            <li>2 CPU Cores</li>
+            <li>200GB SSD</li>
+          </ul>
+          <button class="w-full py-3 bg-purple-600 rounded-lg font-medium hover:bg-purple-700">Order Now</button>
+        </div>
+        <!-- Enterprise Plan -->
+        <div class="pricing-card p-8 bg-gray-900 rounded-xl border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all">
+          <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
+          <p class="text-4xl font-bold mb-6">$99.99<span class="text-lg">/mo</span></p>
+          <ul class="space-y-3 mb-8">
+            <li>16GB RAM</li>
+            <li>8 CPU Cores</li>
+            <li>1TB SSD</li>
+          </ul>
+          <button class="w-full py-3 bg-purple-600 rounded-lg font-medium hover:bg-purple-700">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Server Locations Map ===== -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Global Server Locations</h2>
+      <div id="world-map" class="max-w-4xl mx-auto relative">
+        <!-- SVG World Map with Animated Dots -->
+        <svg viewBox="0 0 800 400" class="w-full h-auto">
+          <!-- World Map Outline (Simplified) -->
+          <path d="M..." fill="#1E293B" stroke="#334155"/> <!-- Add SVG path data -->
+          <!-- Server Locations (Animated Dots) -->
+          <circle cx="150" cy="100" r="6" fill="#8B5CF6" class="pulse-dot">
+            <title>New York, USA</title>
+          </circle>
+          <circle cx="450" cy="120" r="6" fill="#8B5CF6" class="pulse-dot">
+            <title>London, UK</title>
+          </circle>
+          <circle cx="650" cy="180" r="6" fill="#8B5CF6" class="pulse-dot">
+            <title>Singapore</title>
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+      <div class="testimonials-slider max-w-4xl mx-auto relative overflow-hidden">
+        <div class="testimonial-slide flex transition-transform duration-500">
+          <!-- Testimonial 1 -->
+          <div class="min-w-full px-4">
+            <div class="bg-gray-900 p-8 rounded-xl">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-xl">👤</div>
+                <div class="ml-4">
+                  <h4 class="font-semibold">John D.</h4>
+                  <div class="flex text-yellow-400">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-300">"The speed is incredible! My workflows are 3x faster now."</p>
+            </div>
+          </div>
+          <!-- Testimonial 2 (Add more slides) -->
+        </div>
+        <button class="slider-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 p-2 rounded-full">❮</button>
+        <button class="slider-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 p-2 rounded-full">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ Section ===== -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item bg-gray-800 rounded-lg overflow-hidden">
+          <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+            <span class="text-lg font-medium">What is an RDP server?</span>
+            <span class="faq-toggle text-purple-500 text-xl">+</span>
+          </button>
+          <div class="faq-answer p-6 pt-0 hidden">
+            <p class="text-gray-300">RDP (Remote Desktop Protocol) allows you to access a remote computer as if you were sitting in front of it. Our servers are optimized for speed and reliability.</p>
+          </div>
+        </div>
+        <!-- FAQ Item 2 (Add more) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="py-12 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Footer Column 1 -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">RDP Hosting</h3>
+          <p class="text-gray-400">Premium RDP/VPS solutions for developers, businesses, and gamers.</p>
+        </div>
+        <!-- Footer Links -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-purple-500">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-purple-500">Pricing</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-purple-500">Locations</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="text-gray-400">support@rdphosting.com</li>
+            <li class="text-gray-400">+1 (555) 123-4567</li>
+          </ul>
+        </div>
+        <!-- Social -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-purple-500 text-2xl">📱</a>
+            <a href="#" class="text-gray-400 hover:text-purple-500 text-2xl">💬</a>
+            <a href="#" class="text-gray-400 hover:text-purple-500 text-2xl">🐦</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+        <p>© 2023 RDP Hosting. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
